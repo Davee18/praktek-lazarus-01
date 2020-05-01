@@ -32,8 +32,37 @@ implementation
 { TForm1 }
 
 procedure TForm1.Halo(Sender: TObject);
+var
+  namaDepan: String;
+  namaTengah, namaBelakang: String;
+  usia: Integer;
+  targetKuliah: Integer;
+  IPK: Double;
+  nilaiAbjad: Char;
+  skrrt: Boolean;
 begin
-  showmessage ('Hello '+eNama.text);
+  namaDepan:='David';
+  namaTengah:=' Jr ';
+  namaBelakang:=' Da Silva ';
+  usia:=18;
+  IPK:= 3.8;
+  nilaiAbjad:= 'A';
+  skrrt:=True;
+
+  MessageDlg ('Judul Pesan',namaDepan + namaTengah + namaBelakang,mtinformation,[mbOK],0);
+
+  MessageDlg ('Usia', intToStr (usia) ,mtinformation,[mbOK],0);
+
+  MessageDlg ('Ipk', FloatToStr (IPK) ,mtinformation,[mbOK],0);
+
+  MessageDlg ('IPK', nilaiAbjad ,mtinformation,[mbOK],0);
+
+  MessageDlg ('Skrrt', BoolToStr (skrrt) ,mtinformation,[mbOK],0);
+
+  MessageDlg ('Hari Ini', DateToStr (now) ,mtinformation,[mbOK],0);
+
+
+
 
 end;
 
