@@ -1,11 +1,13 @@
 object Form1: TForm1
-  Left = 926
+  Left = 618
   Height = 261
-  Top = 210
+  Top = 211
   Width = 320
-  Caption = 'Form1'
+  BorderStyle = bsDialog
+  Caption = 'Watsapp Mamang'
   ClientHeight = 261
   ClientWidth = 320
+  Color = clBtnText
   LCLVersion = '2.0.6.0'
   object Button1: TButton
     Left = 104
